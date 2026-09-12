@@ -9,10 +9,10 @@ class Solution {
 
         for (int num : nums) {
 
-            currentMax = Math.max(0, currentMax + num);
+            currentMax = Math.max(num, currentMax + num);
             maxSum = Math.max(maxSum, currentMax);
 
-            currentMin = Math.min(0, currentMin + num);
+            currentMin = Math.min(num, currentMin + num);
             minSum = Math.min(minSum, currentMin);
         }
 
